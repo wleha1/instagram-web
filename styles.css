@@ -1,0 +1,121 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100vw; 
+    height: 100vh;
+    background-color: #d1d1d1;
+}
+
+.header {
+    width: 100%;
+    height: 50px; 
+    background-color: #ffffff; 
+    display: flex;
+    align-items: center; /* Центрируем элементы по вертикали */
+    padding: 0 20px; /* Отступы по бокам */
+    position: relative; 
+    box-sizing: border-box; /* Учитываем отступы в ширине */
+}
+
+.header-container {
+    z-index: 3;
+    display: flex;
+    align-items: center; /* Центрируем элементы по вертикали */
+    flex-grow: 1; /* Позволяем контейнеру занимать доступное пространство */
+    justify-content: center; /* Центрируем содержимое внутри контейнера */
+}
+
+.name-logo {
+    display: flex;
+    align-items: center; /* Центрируем логотипы по вертикали */
+    justify-content: center; /* Центрируем логотипы по горизонтали */
+}
+
+.logo {
+    width: 100px; /* Размер логотипа */
+    height: 50px;
+    margin: 0 10px; /* Отступы между логотипами */
+}
+
+.user {
+    width: 50px; 
+    height: 50px;
+    display: flex; 
+    align-items: center; /* Центрируем аватарку по вертикали */
+    justify-content: center; /* Центрируем аватарку по горизонтали */
+    margin-left: auto; /* Сдвигаем пользователя вправо */
+}
+
+.profile-picture {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 50px); 
+    width: 70vw; 
+    margin: 20px auto; 
+}
+
+ul {
+    padding: 0;
+    align-items: center;
+    margin: 0;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    list-style-type: none;
+    margin: auto;
+    padding: 0; 
+    justify-content: center;
+}
+
+.post {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    justify-content: center;
+}
+
+.post-image {
+    width: 100%; 
+    border-radius: 10px; 
+    margin-top: 10px;
+}
+
+.post-text {
+    margin-left: 5px;
+    border-radius: 20px;
+    border-color: #3d3e3ff6;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    width: 140px;
+    height: 60px;
+    align-items: center;
+}
+
+.avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.name {
+    margin-left: 8px;
+    font-size: 20px;
+}
